@@ -2,7 +2,7 @@
 
 Calculates output shape and no of trainable parameters required for convolutional layers based on input shape, stride, kernel size, etc.
 
-## Live Demo: https://SahilSK202.github.io/ConvNet_Shape_And_Parameters_Calculator
+## Live Demo: https://sahilsk202.github.io/ConvNet_Shape_And_Parameters_Calculator/
 
 <hr>
 
