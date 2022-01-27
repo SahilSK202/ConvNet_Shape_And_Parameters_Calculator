@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ConvNet Shape & Params Calculator</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/project.css">
+    <script src="js/main.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <main>
+        <h1>Convolution Network Shape & Parameters Calculator</h1>
+        <div id="parameters">
+            <h4>Input</h4>
+            <div id="input_parameters">
+                <label class="w1">Width <em>W<sub>1</sub></em><input type="range" min=1 max=256 step=1 value=128 width=256></input></label>
+                <label class="h1">Height <em>H<sub>1</sub></em><input type="range" min=1 max=256 step=1 value=128 width=256></input></label>
+                <label class="d1">Channels <em>D<sub>1</sub></em><input type="range" min=1 max=256 step=1 value=3 width=256></input></label>
+            </div>
+            <h4>Convolution</h4>
+            <div id="convolution_parameters">
+                <label class="k">Filter Count <em>K</em><input type="range" min=1 max=256 step=1 value=4></input></label>
+                <label class="f">Kernel  <em>F</em><input type="range" min=1 max=16 step=1 value=3></input></label>
+                <label class="s">Stride <em>S</em><input type="range" min=1 max=10 step=1 value=1></input></label>
+                <label class="p">Zero Padding <em>P</em><input type="range" min=0 max=8 step=0 value=0></input></label>
+            </div>
+            <div id="message"></div>
+            <h4>Parameters</h4><br>
+            <div id="n_params"></div>
+            <h4>Shapes</h4>
+            <div id="shapes">
+                <div id="input"></div>
+                <div id="arrow">→</div>
+                <div id="output"></div>
+            </div>
+        </div>
+        
+        
+        <div id="credits">
+            For more context, see the <a href="http://cs231n.github.io/convolutional-networks/" target="_blank">CS231n course notes</a> <br>
+            For parameters calculation <a href="https://medium.com/@iamvarman/how-to-calculate-the-number-of-parameters-in-the-cnn-5bd55364d7ca" target="_blank">How to calculate the number of parameters in the CNN ?</a>
+        </div>
+    </main>
+</body>
+
+</html>
