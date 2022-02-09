@@ -49,7 +49,7 @@ function main() {
     message_el.innerHTML = message;
 
     parameters_el.innerHTML = `Number of Trainable Parameters : <span id="params">${
-      (v.f.value * v.f.value * v.s.value + 1) * v.k.value
+      (v.f.value * v.f.value * v.d1.value + 1) * v.k.value
     }</span>`;
   }
 
